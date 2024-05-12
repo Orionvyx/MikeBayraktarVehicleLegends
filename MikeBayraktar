@@ -1,5 +1,11 @@
 
 
+local url = "https://discord.com/invite/9tdcywKPdh"
+setclipboard(url)
+print("Discord url has been copied to your clipboard!")
+
+
+
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Welcome"; -- the title (ofc)
@@ -19,7 +25,7 @@ Duration = 5; -- how long the notification should in secounds
     getfenv().grav = workspace.Gravity
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/mikebayraktar/MikeBayraktarVehicleLegends/main/MikeBayraktarGui"))()
     local example = library:CreateWindow({
-      text = "By Shield Crypt Vehicle Legends"
+      text = "By MikeBayraktar Vehicle Legends"
     })
     example:AddToggle("Auto Farm", function(state)
         getfenv().autotest = (state and true or false)
